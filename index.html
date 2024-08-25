@@ -9,16 +9,20 @@
         /*DEFINE A COR DE FUNDO DA TAG BODY*/
         body {
             background-color: #F5F5F5;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         /*DECLARA UMA CLASS DE ESTILO CHAMADA "CONTAINER". ESSA CLASSE PODE SER CHAMADA EM QUALQUER TAG*/
         .container { 
             background-color: #E9E9E9;
             margin: auto;
             width: 600px;
+            box-shadow: 1px 3px 8px 1px rgba(0,0,0,0.2); /*DEFINE CARCTERISTAS DA SOMBRA: (X,Y,BORRAMENTO,RAIO), RGBA(R, G, B, TRANSPARENCIA*/
+            border-radius: 5px;
+            overflow: hidden;
         }
 
         .header {
-            padding: 20px;
+            padding: 40px;
 
         }
 
@@ -28,13 +32,36 @@
             justify-content: space-around;
             padding: 20px;
         }
+
+        .header-title {
+            color:  #036666;
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .header-subtittle{
+            color: #00878C;
+            font-size: 18px;
+            font-weight: 500;
+            margin-bottom: 15px;
+        }
     </style>
 
 </head>
 <body>
     <div class ="container">
         <div class ="header">
-            Primeira Linha
+        <div class = "header-title">
+            Entre para nossa comunidade!
+        </div>
+        <div class ="header-subtittle">
+            Faça sua assinatura agora e ganha 30% de desconto!
+        </div>
+        <div>
+            Faça parte da nossa comunidade de desenvolvedores
+            Tenha suporte da nossa equipe e cresça masi rápido na sua carreira.
+        </div>
         </div>
         <div class ="flex-container">
             <div>
